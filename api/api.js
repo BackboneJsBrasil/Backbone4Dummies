@@ -7,6 +7,9 @@ function setup(app) {
   app.put('/article', function () {
 		//TODO
 	});
+	app.delete('/article/:id', function (request, response) {
+		article.deleteArticle(request, response);
+	});
 	app.get('*/article/:id', function (request,response) {
 		article.getById(request, response);
 	});
