@@ -15,7 +15,7 @@ exports.getAll = function (request, response) {
   });
 };
 
-exports.deleteArticle = function (request, response) {
+exports.delete = function (request, response) {
   article.remove({_id:request.params.id},function (error, data) {
     var strOutput = 'Article deleted.';
     if (error) {

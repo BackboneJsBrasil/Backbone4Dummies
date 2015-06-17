@@ -6,9 +6,11 @@ app.ArticleCollection = Backbone.Collection.extend({
 	initialize: function() {
     this.fetchAllArticles()
   },
+
   fetchAllArticles: function () {
   	this.fetch();
   },
+  
   url: function() {
     return '/articles'
   }
