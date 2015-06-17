@@ -15,6 +15,17 @@ exports.getAll = function (request, response) {
   });
 };
 
+exports.delete = function (request, response) {
+  article.remove({_id:request.params.id},function (error, data) {
+    var strOutput = 'Article deleted.';
+    if (error) {
+      strOutput = 'Could not delete the article.';
+    }
+    response.json(strOutput);
+    response.end();
+  });
+};
+
 exports.getById = function (request, response) {
   article.findOne({_id:request.params.id},function (error, data) {
     var strOutput;

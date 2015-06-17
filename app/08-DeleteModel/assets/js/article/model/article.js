@@ -5,8 +5,11 @@ app.ArticleModel = Backbone.Model.extend({
     title:   'No title',
     content: 'No content'
   },
-
-  urlRoot: function() {
-    return '/articles';
+  url: function() {
+    return '/article/' + this.get('id');
+  },
+  removeArticle: function (id) {
+  	this.set("id",id);
+  	this.destroy(id);
   }
 });
