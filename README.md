@@ -33,7 +33,7 @@ There are the basic requirements for you application:
 
 1. Go to api-node folder and run `node server.js`
 
-2. In your browser type localhost:8000/01 (You just need to change the number to navigate through the folders)
+2. In your browser type localhost:8000/01-Initialize (You just need to change the folder path to navigate through the examples)
 
 Made with ❤ by
 [Gabriel Zigolis](https://twitter.com/zigolis),
