@@ -1,10 +1,9 @@
 var express       = require('express');
-var request       = require('request');
-var cors          = require('cors');
-var bodyParser    = require('body-parser');
 var app           = express();
-var dataBase			= require('./database/dbConfig')
+var cors          = require('cors');
 var serveStatic   = require ('serve-static');
+var bodyParser    = require('body-parser');
+var dataBase			= require('./database/dbConfig')
 var Api           = require("./api");
 var Router        = require("./routes");
 

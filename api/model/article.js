@@ -1,4 +1,4 @@
-var mongoose  = require('mongoose')
+var mongoose  = require('mongoose');
 var article   = mongoose.model('articles');
 
 exports.getAll = function (request, response) {
