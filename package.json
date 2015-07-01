@@ -24,7 +24,10 @@
     "cors": "^2.7.1",
     "express": "^4.12.4",
     "mongoose": "^4.0.5",
-    "request": "^2.57.0",
-    "serve-static": "^1.9.3"
+    "serve-static": "^1.9.3",
+    "backbone": "^1.2.1",
+    "bootstrap": "^3.3.4",
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3"
   }
 }
